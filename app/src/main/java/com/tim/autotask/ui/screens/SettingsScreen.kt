@@ -46,10 +46,10 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
+import com.tim.autotask.ui.theme.Green
 import com.tim.autotask.util.PermissionHelper
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -246,7 +246,7 @@ private fun PermissionRow(
                 Icon(
                     Icons.Default.CheckCircle,
                     contentDescription = "已授权",
-                    tint = Color(0xFF66BB6A),
+                    tint = Green,
                     modifier = Modifier.size(20.dp)
                 )
             } else {
